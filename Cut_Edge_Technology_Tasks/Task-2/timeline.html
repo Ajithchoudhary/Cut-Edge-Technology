@@ -1,77 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="timeline.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="timeline.css">
 </head>
 <style>
-    
-body{
-    background-color: rgb(222, 218, 218);
-}.box {
-  width: 80%;
-  margin: 50px auto;
-  padding: 20px;
-  border-radius: 8px;
-  text-align: center;
-  display: flex;
-}
+  body {
+    margin: 50px 20px;
+  }
 
-.container {
-      background: white;
-border-radius: 10px;
-  text-align: center;
-  position: relative;
-  padding-top: 20px;
-  width: 300px; 
-margin-right: 30px;}
+  .box {
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    gap: 25px;
+    margin: 0 0 0 25px;
+  }
 
-.bluedot {
-  width: 18px;
-  height: 18px;
-  background-color: #00aaff;
-  border-radius: 50%;
-  margin: 0 auto 40px auto;
-}
-.greendot{
-  width: 18px;
-  height: 18px;
-  background-color: #21cc4f;
-  border-radius: 50%;
-  margin: 0 auto 40px auto;
-}
-.year {
-  font-weight: bold;
-  color: #007acc;
-  margin: 5px 0px;
-}
+  section {
+    display: flex;
+    text-align: center;
+    width: 1120px;
+    margin-left: 25px;
+    justify-content: space-between;
+  }
 
+  .container {
+    background: white;
+    text-align: center;
+    width: 260px;
+    padding-top: 10px;
+    margin-top: -10px;
+    z-index: 1;
+    border-radius: 10px;
+  }
+
+  .bluedot {
+    width: 18px;
+    height: 18px;
+    background-color: #00aaff;
+    border-radius: 50%;
+    margin: 0 auto 40px auto;
+  }
+
+  .greendot {
+    width: 18px;
+    height: 18px;
+    background-color: #21cc4f;
+    border-radius: 50%;
+    margin: 0 auto 40px auto;
+  }
+
+  .year {
+    font-weight: bold;
+    color: #007acc;
+    margin: 5px 0px;
+  }
+
+  hr {
+    border: 3px solid #007acc;
+    position: relative;
+    margin-top: -10px;
+    z-index: 0;
+  }
 </style>
+
 <body>
-    <div class="box">
+  <section>
+    <div class="greendot"></div>
+    <div class="bluedot"></div>
+    <div class="bluedot"></div>
+    <div class="bluedot"></div>
+
+  </section>
+  <hr>
+  <div class="box">
     <div class="container">
-      <div class="greendot"></div>
       <h3 class="year">1982</h3>
       <p>Started as Medical <br> Representative at Bevit <br> Pharmaceuticals.</p>
     </div>
+
     <div class="container">
-      <div class="bluedot"></div>
       <h3 class="year">1987</h3>
       <p>Promoted to Area <br>Manager, explanded <br> Karnataka operations.</p>
     </div>
+
     <div class="container">
-      <div class="bluedot"></div>
+
       <h3 class="year">1994</h3>
       <p>Became Regional <br> Manager, led 25-member <br> team.</p>
     </div>
+
     <div class="container">
-      <div class="bluedot"></div>
+
       <h3 class="year">1998</h3>
       <p>Assigned Maharashtra <br> region for business <br>expansion.</p>
     </div>
-    </div>
-</div>
+  </div>
+  </div>
 </body>
+
 </html>
