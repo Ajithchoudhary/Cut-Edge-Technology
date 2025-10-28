@@ -9,26 +9,29 @@
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Open Sans', sans-serif;
+            /* padding: 50px; */
         }
 
         .container {
             display: flex;
-            margin: 50px 30px;
-            border-radius: 10px;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1100px;
+            margin: 60px 0;
             padding: 40px;
-            box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+            border-radius: 16px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
         }
 
-        .left {
-            width: 60%;
+        .overview {
             padding: 40px 0px 0px 0px;
             font-size: 15px;
-        }
-
-        .right {
-            width: 40%;
+            width: 60%;
         }
 
         .p {
@@ -96,22 +99,23 @@
             box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
         }
 
-        img:hover {
+        /* img:hover {
             box-shadow: 0 0 20px black;
-        }
+        } */
     </style>
 </head>
 
 <body>
     <div class="container">
-        <div class="left">
+        <div class="overview">
             <h1>Our Company Overview</h1>
-            <p class="p">Karshilpa Healthcare LLP is a government-recognized export house delivering high-quality <br>
-                pharmaceutical and nutraceutical products globally. With over 40 years of experience, we <br> specialize
+            <p>Karshilpa Healthcare LLP is a government-recognized export house delivering high-quality
+                pharmaceutical and nutraceutical products globally. With over 40 years of experience, we specialize
                 in trusted, WHO-GMP-certified manufacturing and exports.</p>
-            <p class="p">Serving 30+ countries across Africa, Asia, and the Middle East, we provide 500+ <br>
-                formulations with reliable logistics, regulatory support, and proven expertise. Our mission <br>is to
+            <p>Serving 30+ countries across Africa, Asia, and the Middle East, we provide 500+
+                formulations with reliable logistics, regulatory support, and proven expertise. Our mission is to
                 make global healthcare more accessible and affordable.</p>
+
             <div class="info">
 
                 <div class="content1">

@@ -3,127 +3,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Product's</title>
-</head>
-<style>
-    body {
+    <title>Company Sections</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
 
-        text-align: center;
-    }
-    .top {
-        display: flex;
-        margin: 30px 200px 50px 200px;
-        height: 280px;
-    }
-    .bottom {
-        display: flex;
-        margin: 0 200px;
-    }
-    .img1 {
-        height: 60px;
-        width: 60px;
-        border-radius: 10px;
-        margin-bottom: -8px;
-    }
-    .img2 {
-        height: 150px;
-        width: 232px;
-        border-radius: 10px 10px 0px 0px;
-    }
-    .top1 {
-        box-shadow: 5px 5px 15px rgb(0, 0, 0, 0.3);
-        margin-left: 30px;
-        padding: 20px;
-        border-radius: 10px;
-    }
-    .btm1 {
-        height: 340px;
-        border-radius: 10px;
-        margin: 0px 10px;
-        text-align: left;
-                box-shadow: 5px 5px 15px rgb(0, 0, 0, 0.3);
-    }
-.bp{
-    margin-top: -15px;
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        h2 {
+            text-align: center;
+            margin:  -8px 0px 15px 0px;
+        }
+
+        .section1 {
+            padding: 10px 0px 15px 0px;
+            background-color: #f0e6e660;
+        }
+      
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .card {
+            max-width: 325px;
+            border-radius: 12px;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            background-color: white;
+        }
+
+        .card img {
+            width: 70px;
+            height: 70px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            margin: 6px 0;
+        }
+
+        .card p {
+            color: #555;
+            font-size: 15px;
+        }
+
+        .btn {
+            margin-top: 10px;
+            font-weight: 600;
+            color: #008cff;
+            text-decoration: none;
+        }
+
+        .categories_description {
+            text-align: center;
+            max-width: 700px;
+            margin: -10px 0 10px 400px;
+        }
+
+        .categories_card {
+            max-width: 250px;
+            border-radius: 12px;
+            text-align: left;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+
+        }
+
+        .categories_card img {
+            width: 100%;
+            height: 150px;
+            border-radius: 10px 10px 0px 0px;
+        }
+
+        .content {
+            padding:  15px;
+        }
+.content p{
+    font-size: 13px;
+    margin: -10px 0px 10px 0px;
 }
-    .left {
-        padding-left: 15px;   
-    }
-    a{
-        color: rgb(0, 221, 255);
-        text-decoration: none;
-        font-weight: bold;
-    }
-    button{
-        padding: 20px 30px;
-        color: rgb(0, 221, 255);
-        border: 2px solid  rgb(0, 221, 255);
-        border-radius: 5px ;
-        font-weight: bold;
-        margin: 20px 0px 100px 0px;
-        background-color: white;
-    }
-</style>
+        button {
+            padding: 10px 20px;
+            color: #008cff;
+            border: 1px solid #008cff;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
 <body>
-    <h2>Why Global Partners Trust Us</h2>
-    <div class="top">
-        <div class="top1">
-            <img src="/Cut_Edge_Technology_Tasks/Images/factory.jpg" alt="" class="img1">
-            <h3>Quality-First Manufacturing</h3>
-            <p>Our state-of-the-art facilities adhere to the <br> highest international standards, ensuring <br>every
-                product meets rigorous quality <br>benchmarks before export.</p>
-        </div>
-        <div class="top1">
-            <img src="/Cut_Edge_Technology_Tasks/Images/parcel.jpeg" alt="" class="img1">
-            <h3>End-to-End Export Support</h3>
-            <p>From regulatory documentation to <br>specialized packaging and logistics, we <br>handle every aspext of
-                the export process <br>with precision and care. </p>
-        </div>
-        <div class="top1">
-            <img src="/Cut_Edge_Technology_Tasks/Images/global.jpeg" alt="" class="img1">
-            <h3>500+ Products Delivered <br>Globally</h3>
-            <p>Our extensive product portfolio serves <br>diverse healthcare needs across <br>continents, backed by
-                consistent quality <br>and timely delivery.</p>
-        </div>
-    </div>
-    <h2>Our Product Categories</h2>
-    <p class="bp">We offer a comprehensive range of ppharmaceutical products across multiple therapeutic <br>categories to meet
-        diverse healthcare needs globally.</p>
-    <div class="bottom">
-        <div class="btm1">
-            <img src="/Cut_Edge_Technology_Tasks/Images/antibiotics.jpeg" alt="" class="img2">
-            <h3 class="left">Antibiotics</h3>
-            <p class="left">Broad spectrum and targeted <br>antibiotics in various <br>formulations including tablets,
-                <br>capsule,
-                and injectables.</p>
-            <a class="left" href="">View Products →</a>
-        </div>
-        <div class="btm1">
-            <img src="/Cut_Edge_Technology_Tasks/Images/cardio.jpeg" alt="" class="img2">
-            <h3 class="left">Cardiovascular</h3>
-            <p class="left">Comprehensive range of <br>medications for hypertension, <br>heart failure, and other
-                <br>cardiovascular
-                conditions.</p>
-            <a class="left" href="">View Products →</a>
-        </div>
-        <div class="btm1">
-            <img src="/Cut_Edge_Technology_Tasks/Images/anti diabetic.jpeg" alt="" class="img2">
-            <h3 class="left">Anti-Diabetic</h3>
-            <p class="left">Oral hypoglencemics, insulins, <br>and other diabetes <br> management medications with
-                <br>proven
-                eficacy.</p>
-            <a class="left" href="">View Products →</a>
-        </div>
-        <div class="btm1">
-            <img src="/Cut_Edge_Technology_Tasks/Images/dermatologies.jpeg" alt="" class="img2">
-            <h3 class="left">Dermatological</h3>
-            <p class="left">Topical preparetions, creems, <br>ointements and specialized <br>formulations for various
-                skin
-                <br>conditions.
-            </p>
-            <a class="left" href="">View Products →</a>
+
+    <div class="section1">
+        <h2>Why Global Partners Trust Us</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="https://cdn-icons-png.flaticon.com/512/2920/2920309.png" alt="">
+                <h3>Quality-First Manufacturing</h3>
+                <p>Our state-of-the-art facilities adhere to the highest international standards ensuring rigorous
+                    quality benchmarks before export.</p>
+            </div>
+            <div class="card">
+                <img src="https://cdn-icons-png.flaticon.com/512/1698/1698535.png" alt="">
+                <h3>End-to-End Export Support</h3>
+                <p>From regulatory documentation to specialized packaging and logistics, we handle every aspect of
+                    export with precision and care.</p>
+            </div>
+            <div class="card">
+                <img src="https://cdn-icons-png.flaticon.com/512/2991/2991102.png" alt="">
+                <h3>500+ Products Delivered Globally</h3>
+                <p>Our extensive portfolio serves diverse healthcare needs across continents backed by consistent
+                    quality and timely delivery.</p>
+            </div>
         </div>
     </div>
-    <button>View All Cetegories</button>
+
+    <div class="section2">
+        <h2>Our Product Categories</h2>
+        <p class="categories_description">
+            We offer a comprehensive range of pharmaceutical products across multiple therapeutic categories to meet
+            diverse healthcare needs globally.
+        </p>
+        <div class="cards">
+            <div class="categories_card">
+                <img src="/Cut_Edge_Technology_Tasks/Images/antibiotics.jpeg" alt="">
+                <div class="content">
+                    <h3>Antibiotics</h3>
+                    <p>Broad-spectrum and targeted antibiotics in tablets, capsules, and injectables.</p>
+                    <a href="#" class="btn">View Products →</a>
+                </div>
+            </div>
+            <div class="categories_card">
+                <img src="/Cut_Edge_Technology_Tasks/Images/cardio.jpeg" alt="">
+                <div class="content">
+                    <h3>Cardiovascular</h3>
+                    <p>Comprehensive range of medications for hypertension, heart failure, and related conditions.</p>
+                    <a href="#" class="btn">View Products →</a>
+                </div>
+            </div>
+            <div class="categories_card">
+                <img src="/Cut_Edge_Technology_Tasks/Images/anti diabetic.jpeg" alt="">
+                <div class="content">
+                    <h3>Anti-Diabetic</h3>
+                    <p>Oral hypoglycemics, insulins, and diabetes-management medications with proven efficacy.</p>
+                    <a href="#" class="btn">View Products →</a>
+                </div>
+            </div>
+            <div class="categories_card">
+                <img src="/Cut_Edge_Technology_Tasks/Images/dermatologies.jpeg" alt="">
+                <div class="content">
+                    <h3>Dermatological</h3>
+                    <p>Topical creams, ointments, and specialized formulations for various skin conditions.</p>
+                    <a href="#" class="btn">View Products →</a>
+                </div>
+            </div>
+
+        </div>
+        <div style="text-align:center; margin-top:30px;">
+            <button>View All Categories</button>
+        </div>
+    </div>
+
 </body>
+
 </html>
